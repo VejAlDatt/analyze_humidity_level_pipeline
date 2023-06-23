@@ -5,7 +5,8 @@ This project intends to implement a data architecture for a data-intensive batch
 
 ## Data Processing Operational Architecture:
 
-### Main Steps:
+
+### Main Steps of the Data Engineering Implementation:
 
 The following are the important steps the data engineering project underwent:  
 
