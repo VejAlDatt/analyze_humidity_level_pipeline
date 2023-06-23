@@ -1,0 +1,64 @@
+# Version and services configuration
+version: "3.9"
+
+# Database service configuration
+services:
+  database:
+    image: "postgres:bullseye"  # Use the "postgres:bullseye" image
+    hostname: database  # Set the hostname to "database"
+    ports: ["5432:5432"]  # Expose port 5432 for communication
+
+    # Environment variables for the database service
+    environment:
+      - POSTGRES_USER=datapipeline
+      - POSTGRES_PASSWORD=datapipeline
+      - POSTGRES_DB=database
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+    # Volume configuration for data persistence
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+
+    restart: on-failure  # Restart the container on failure
+
+    # Health check configuration for the database service
+    healthcheck:
+      test: pg_isready -U datapipeline -d database  # Health check command
+      interval: 20s  # Check health every 20 seconds
+      timeout: 10s  # Timeout after 10 seconds
+      retries: 4  # Retry 4 times if health check fails
+
+  # Cluster model service configuration
+  cluster-model:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/cluster-model.dockerfile
+    restart: on-failure
+    depends_on: [database, datapipeline]  # Depend on database and datapipeline services
+    links: [database]  # Link to the database service
+
+  # User interface service configuration
+  user-interface:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/user-interface.dockerfile
+    ports: ["8080:80"]  # Expose port 8080 for communication
+    restart: on-failure
+    depends_on: [database, datapipeline, cluster-model]  # Depend on database, datapipeline, and cluster-model services
+    links: [database]  # Link to the database service
+
+  # Data pipeline service configuration
+  datapipeline:
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/datapipeline.dockerfile
+    restart: on-failure
+    depends_on: [database]  # Depend on the database service
+    links: [database]  # Link to the database service
+
+# Volume configuration
+volumes:
+  postgres-data:
+    # Define the volume for the database service
