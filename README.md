@@ -1,7 +1,7 @@
 # Batch Processing Application for Analyzing Flights Data
 
 ## Project Brief:
-This project intends to implement a data architecture for a data-intensive batch processing application that analyses the humidity of aircraft at their origin airport, to advise Aviation Officials on the safety of planes departing from the origin airport. The project uses the humidity value to cluster data based on whether it would be (Good, Moderate, or Bad) for aircraft to take off to their destination flight. The dataset has approximately 1.7 million data records and uses the Prefect tool for workflow automation. To view a live demonstration of the project [visit this link] (https://www.youtube.com/watch?v=K6rpIQ7e2CE)
+This project intends to implement a data architecture for a data-intensive batch processing application that analyses the humidity of aircraft at their origin airport, to advise Aviation Officials on the safety of planes departing from the origin airport. The project uses the humidity value to cluster data based on whether it would be (Good, Moderate, or Bad) for aircraft to take off to their destination flight. The dataset has approximately 1.7 million data records and uses the Prefect tool for workflow automation. To view a live demonstration of the project [Visit this link](https://www.youtube.com/watch?v=K6rpIQ7e2CE)
 
 ## Data Processing Operational Architecture:
 
@@ -25,7 +25,7 @@ You could either choose to view the aformentioned live demonstration for setting
 2. Download this zipped project from GitHub, by clicking on the green button above named ‘Code’ and then further clicking on the option entitled ‘Download Zip’.
 3. Once downloaded, extract the files to your local system.
 4. Once you extracted the files, you may notice the data folder is missing the Dataset (This is because GitHub has a limitation of 100 MB on file uploads, so we will need to download our CSV Dataset file from Kaggle itself.
-5. Use this [Kaggle link] (https://www.kaggle.com/datasets/shubhamkumartomar/flight-weather-dataset) to be redirected to the Kaggle page which has the dataset. Ensure you log in with your credentials to be allowed the privilege to download the CSV file. Click the download button to deploy the file to your system.
+5. Use this [Kaggle link](https://www.kaggle.com/datasets/shubhamkumartomar/flight-weather-dataset) to be redirected to the Kaggle page which has the dataset. Ensure you log in with your credentials to be allowed the privilege to download the CSV file. Click the download button to deploy the file to your system.
 6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the ‘data’ folder of the extracted GitHub repository you downloaded which was entitled ‘flights-project’.
 7. Open Command Prompt on your system.
 8. Navigate to the previously downloaded and extracted project ‘flights-project’ via the command prompt.
