@@ -5,7 +5,7 @@ This project intends to implement a data architecture for a data-intensive batch
 
 ## Data Processing Operational Architecture:
 
-![VejendraDattArchitecture](https://github.com/VejAlDatt/flights-project/assets/126171063/690034b8-983b-4a61-8535-6bc731f730a8)
+![VejendraDattArchitecture](https://github.com/VejAlDatt/flights-project/assets/126171063/0b58f703-f11c-4af9-9250-7535c2f6d5a1)
 
 ## Main Steps of the Data Engineering Implementation:
 
