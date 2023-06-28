@@ -22,14 +22,14 @@ The following are the important steps the data engineering project underwent:
 You could either choose to view the aformentioned live demonstration for setting up and running this project via this [YouTube link](https://www.youtube.com/watch?v=K6rpIQ7e2CE) or follow the step-by-step guidelines provided below:
 
 1. Ensure that your docker engine is stable and is running without problems, given that you have already downloaded Docker Desktop and Docker Compose.
-2. Download this zipped project from GitHub, by clicking on the green button above named ‘Code’ and then further clicking on the option entitled ‘Download Zip’.
+2. Download this zipped project from GitHub, by clicking on the green button above named `Code` and then further clicking on the option entitled `Download Zip`.
 3. Once downloaded, extract the files to your local system.
 4. Once you extracted the files, you may notice the data folder is missing the Dataset (This is because GitHub has a limitation of 100 MB on file uploads, so we will need to download our CSV Dataset file from Kaggle itself.
 5. Use this [Kaggle link](https://www.kaggle.com/datasets/shubhamkumartomar/flight-weather-dataset) to be redirected to the Kaggle page which has the dataset. Ensure you log in with your credentials to be allowed the privilege to download the CSV file. Click the download button to deploy the file to your system.
-6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the ‘data’ folder of the extracted GitHub repository you downloaded which was entitled ‘flights-project’.
+6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the ‘data’ folder of the extracted GitHub repository you downloaded which was entitled `flights-project`.
 7. Open Command Prompt on your system.
-8. Navigate to the previously downloaded and extracted project ‘flights-project’ via the command prompt.
+8. Navigate to the previously downloaded and extracted project `flights-project` via the command prompt.
 9. Once inside enter the command `docker-compose build `and press enter.
-10. Once all the respective docker builds are finished, enter the command ‘docker-compose up -d’ and press enter.
-11. Once all the containers have started, open your browser and enter in your address bar ‘localhost:8080’.
+10. Once all the respective docker builds are finished, enter the command `docker-compose up -d` and press enter.
+11. Once all the containers have started, open your browser and enter in your address bar `localhost:8080`.
 12. You could now interact with the webpage to view the different operations of the data engineering project.
