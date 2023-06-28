@@ -26,7 +26,7 @@ You could either choose to view the aformentioned live demonstration for setting
 3. Once downloaded, extract the files to your local system.
 4. Once you extracted the files, you may notice the data folder is missing the Dataset (This is because GitHub has a limitation of 100 MB on file uploads, so we will need to download our CSV Dataset file from Kaggle itself.
 5. Use this [Kaggle link](https://www.kaggle.com/datasets/shubhamkumartomar/flight-weather-dataset) to be redirected to the Kaggle page which has the dataset. Ensure you log in with your credentials to be allowed the privilege to download the CSV file. Click the download button to deploy the file to your system.
-6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the ‘data’ folder of the extracted GitHub repository you downloaded which was entitled `flights-project`.
+6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the `data` folder of the extracted GitHub repository you downloaded which was entitled `flights-project`.
 7. Open Command Prompt on your system.
 8. Navigate to the previously downloaded and extracted project `flights-project` via the command prompt.
 9. Once inside enter the command `docker-compose build `and press enter.
