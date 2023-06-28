@@ -29,7 +29,7 @@ You could either choose to view the aformentioned live demonstration for setting
 6. Once downloaded, extract or unzip the file. Copy the CSV file and paste it inside the ‘data’ folder of the extracted GitHub repository you downloaded which was entitled ‘flights-project’.
 7. Open Command Prompt on your system.
 8. Navigate to the previously downloaded and extracted project ‘flights-project’ via the command prompt.
-9. Once inside enter the command ‘docker-compose build’ and press enter.
+9. Once inside enter the command 'docker-compose build' and press enter.
 10. Once all the respective docker builds are finished, enter the command ‘docker-compose up -d’ and press enter.
 11. Once all the containers have started, open your browser and enter in your address bar ‘localhost:8080’.
 12. You could now interact with the webpage to view the different operations of the data engineering project.
